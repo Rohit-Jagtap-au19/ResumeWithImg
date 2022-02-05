@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    /* background: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px; /* to remove margin from Top*/
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+/* left Section */
+
+.left{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+
+}
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
+    padding-bottom: 20px;
+}
+.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: saddlebrown;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+h1{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+h4{
+   color: #fff;
+   margin-top: 10px;
+   font-size: 0.9em;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom:20px ;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.to{
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{ 
+   color: #fff;
+   font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.education li{
+    margin-bottom: 15px;
+}
+.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 600;
+}
+.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 15px;
+}
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.pd1{
+    padding-left: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+.pd2{
+    padding-left: 85px;
+    list-style-type:square ;
+}
+.pd3{
+    padding-left: 65px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Right Section */
+
+.right{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 20px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;  /* remove spaces between */
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    color: #2a7da2;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.mt{
+    margin-top:0px;
+    margin-bottom:10px;
+} 
+.btn{
+    background:#d7d7d7;
+    border:1px solid #ccc;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -khtml-border-radius:3px;
+    border-radius:3px;
+    color:#333;
+    padding:.3em .5em;
+    text-decoration:none; 
+    cursor: pointer;
+}
+
+/* get resume */
+.download{
+    position: fixed;
+    bottom: 6px;
+    left: 53%;
+    border-radius: 90px
+    margin-left: -104.5px; /*104.5px is half of the button's width*/
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border
+}
+
+.download:hover {
+    background-color: RoyalBlue;
+  }
+  
+.get_Resume{
+  height:1000px;
+}
+
+@media only screen 
+   and (max-width : 415px) {
+
+   .btn{
+       margin-bottom: 5px;
+   }
+
+   .download{
+       background-color: dodgerblue;
+       color: white;
+       border: none;
+   }
+
+   .download:hover {
+    background-color: RoyalBlue;
+  }
+
+}
